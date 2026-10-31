@@ -1,0 +1,482 @@
+[
+  [
+    "Camping & Survival",
+    "Sleeping bag comfort rating describes?",
+    [
+      "Packed weight",
+      "Comfortable sleeping temperature",
+      "Pillow softness",
+      "Waterproof level"
+    ],
+    1,
+    60
+  ],
+  [
+    "Camping & Survival",
+    "Which knot secures rope around a post?",
+    [
+      "Bowline",
+      "Figure eight",
+      "Clove hitch",
+      "Granny knot"
+    ],
+    2,
+    60
+  ],
+  [
+    "Camping & Survival",
+    "Lost hiking? First move?",
+    [
+      "Sprint downhill",
+      "Follow tracks",
+      "Climb a tree",
+      "Stop and assess"
+    ],
+    3,
+    60
+  ],
+  [
+    "Camping & Survival",
+    "Which layer wicks sweat?",
+    [
+      "Synthetic base layer",
+      "Cotton hoodie",
+      "Denim jacket",
+      "Plastic bag"
+    ],
+    0,
+    60
+  ],
+  [
+    "Camping & Survival",
+    "What is a bear canister?",
+    [
+      "Water jug",
+      "Bear-resistant food container",
+      "Soup pot",
+      "Bear whistle"
+    ],
+    1,
+    60
+  ],
+  [
+    "Camping & Survival",
+    "The sun generally rises in the…",
+    [
+      "North",
+      "South",
+      "West",
+      "East"
+    ],
+    3,
+    60
+  ],
+  [
+    "Camping & Survival",
+    "Avoid which cold-weather base layer?",
+    [
+      "Wool",
+      "Polyester",
+      "Cotton",
+      "Polypropylene"
+    ],
+    2,
+    60
+  ],
+  [
+    "Camping & Survival",
+    "Safest way to extinguish a campfire?",
+    [
+      "Drown, stir, check heat",
+      "Cover with leaves",
+      "Leave when flames stop",
+      "Throw socks"
+    ],
+    0,
+    60
+  ],
+  [
+    "Food & International Cuisine",
+    "Tabbouleh traditionally uses which grain?",
+    [
+      "Rice",
+      "Bulgur",
+      "Quinoa",
+      "Oats"
+    ],
+    1,
+    60
+  ],
+  [
+    "Food & International Cuisine",
+    "Which spice commonly colors dishes yellow?",
+    [
+      "Sumac",
+      "Cumin",
+      "Turmeric",
+      "Black pepper"
+    ],
+    2,
+    60
+  ],
+  [
+    "Food & International Cuisine",
+    "Muhammara's main vegetable?",
+    [
+      "Potato",
+      "Eggplant",
+      "Cucumber",
+      "Red pepper"
+    ],
+    3,
+    60
+  ],
+  [
+    "Food & International Cuisine",
+    "City famous for many kibbeh varieties?",
+    [
+      "Aleppo",
+      "Homs",
+      "Latakia",
+      "Damascus"
+    ],
+    0,
+    60
+  ],
+  [
+    "Food & International Cuisine",
+    "Cheese in Greek salad?",
+    [
+      "Cheddar",
+      "Feta",
+      "Gouda",
+      "Brie"
+    ],
+    1,
+    60
+  ],
+  [
+    "Food & International Cuisine",
+    "Baba ghanoush mainly uses?",
+    [
+      "Potato",
+      "Chickpeas",
+      "Eggplant",
+      "Zucchini"
+    ],
+    2,
+    60
+  ],
+  [
+    "Food & International Cuisine",
+    "Umami means which taste?",
+    [
+      "Sour",
+      "Sweet",
+      "Bitter",
+      "Savory"
+    ],
+    3,
+    60
+  ],
+  [
+    "Food & International Cuisine",
+    "Paella originated in?",
+    [
+      "Spain",
+      "Italy",
+      "Mexico",
+      "Portugal"
+    ],
+    0,
+    60
+  ],
+  [
+    "Naughty Relationships – Adults Only",
+    "Dating's halo effect means?",
+    [
+      "One attractive trait shapes overall impression",
+      "Forgot anniversary",
+      "Exes become angels",
+      "Matching outfits"
+    ],
+    0,
+    60
+  ],
+  [
+    "Naughty Relationships – Adults Only",
+    "What is ghosting?",
+    [
+      "Halloween dating",
+      "Suddenly ending communication",
+      "Spooky selfie",
+      "Changing phone"
+    ],
+    1,
+    60
+  ],
+  [
+    "Naughty Relationships – Adults Only",
+    "What is breadcrumbing?",
+    [
+      "Baking together",
+      "Breakfast in bed",
+      "Occasional attention without commitment",
+      "A bakery date"
+    ],
+    2,
+    60
+  ],
+  [
+    "Naughty Relationships – Adults Only",
+    "The bonding hormone?",
+    [
+      "Adrenaline",
+      "Insulin",
+      "Melatonin",
+      "Oxytocin"
+    ],
+    3,
+    60
+  ],
+  [
+    "Naughty Relationships – Adults Only",
+    "What is love bombing?",
+    [
+      "Romantic fireworks",
+      "Overwhelming attention and affection",
+      "Forgotten Valentine's",
+      "A heart emoji"
+    ],
+    1,
+    60
+  ],
+  [
+    "Naughty Relationships – Adults Only",
+    "DTR stands for?",
+    [
+      "Dinner Then Romance",
+      "Delete The Receipts",
+      "Define The Relationship",
+      "Don't Text Relatives"
+    ],
+    2,
+    60
+  ],
+  [
+    "Naughty Relationships – Adults Only",
+    "Mere-exposure effect suggests familiarity can…",
+    [
+      "Increase liking",
+      "Fix Wi-Fi",
+      "Make parking easier",
+      "Burn calories"
+    ],
+    0,
+    60
+  ],
+  [
+    "Naughty Relationships – Adults Only",
+    "A situationship is…",
+    [
+      "Long-distance marriage",
+      "Secret wedding",
+      "Therapy session",
+      "Romantic connection without clear labels"
+    ],
+    3,
+    60
+  ],
+  [
+    "Drinks & Cocktails",
+    "Mojito's classic base spirit?",
+    [
+      "Gin",
+      "Rum",
+      "Vodka",
+      "Tequila"
+    ],
+    1,
+    60
+  ],
+  [
+    "Drinks & Cocktails",
+    "Espresso, steamed milk and foam?",
+    [
+      "Americano",
+      "Cold brew",
+      "Cappuccino",
+      "Espresso tonic"
+    ],
+    2,
+    60
+  ],
+  [
+    "Drinks & Cocktails",
+    "Negroni's signature bitter ingredient?",
+    [
+      "Grenadine",
+      "Lime",
+      "Cola",
+      "Campari"
+    ],
+    3,
+    60
+  ],
+  [
+    "Drinks & Cocktails",
+    "Pisco sour strongly associated with?",
+    [
+      "Peru",
+      "Ireland",
+      "Japan",
+      "Greece"
+    ],
+    0,
+    60
+  ],
+  [
+    "Drinks & Cocktails",
+    "Classic margarita's main citrus?",
+    [
+      "Orange",
+      "Lime",
+      "Grapefruit",
+      "Lemon"
+    ],
+    1,
+    60
+  ],
+  [
+    "Drinks & Cocktails",
+    "South American caffeinated infusion?",
+    [
+      "Kefir",
+      "Kombucha",
+      "Yerba mate",
+      "Sahlab"
+    ],
+    2,
+    60
+  ],
+  [
+    "Drinks & Cocktails",
+    "What makes a martini dirty?",
+    [
+      "Coffee",
+      "Chili",
+      "Cola",
+      "Olive brine"
+    ],
+    3,
+    60
+  ],
+  [
+    "Drinks & Cocktails",
+    "Traditional tequila is made from?",
+    [
+      "Blue agave",
+      "Sugarcane",
+      "Juniper",
+      "Barley"
+    ],
+    0,
+    60
+  ],
+  [
+    "Old Syrian TV – أيام الزمن الجميل",
+    "مين لعب دور أبو عصام بباب الحارة؟",
+    [
+      "بسام كوسا",
+      "عباس النوري",
+      "سلوم حداد",
+      "أيمن زيدان"
+    ],
+    1,
+    60
+  ],
+  [
+    "Old Syrian TV – أيام الزمن الجميل",
+    "مين نجم المسلسل الساخر مرايا؟",
+    [
+      "دريد لحام",
+      "جمال سليمان",
+      "ياسر العظمة",
+      "غسان مسعود"
+    ],
+    2,
+    60
+  ],
+  [
+    "Old Syrian TV – أيام الزمن الجميل",
+    "مين لعب المدير بيوميات مدير عام؟",
+    [
+      "بسام كوسا",
+      "دريد لحام",
+      "أسعد فضة",
+      "أيمن زيدان"
+    ],
+    3,
+    60
+  ],
+  [
+    "Old Syrian TV – أيام الزمن الجميل",
+    "مين لعبت أم عصام بباب الحارة؟",
+    [
+      "صباح الجزائري",
+      "منى واصف",
+      "سامية الجزائري",
+      "سلاف فواخرجي"
+    ],
+    0,
+    60
+  ],
+  [
+    "Old Syrian TV – أيام الزمن الجميل",
+    "مين جسّد مفيد الوحش بنهاية رجل شجاع؟",
+    [
+      "أيمن زيدان",
+      "جمال سليمان",
+      "بسام كوسا",
+      "سلوم حداد"
+    ],
+    1,
+    60
+  ],
+  [
+    "Old Syrian TV – أيام الزمن الجميل",
+    "مين لعب أسعد بضيعة ضايعة؟",
+    [
+      "قصي خولي",
+      "باسم ياخور",
+      "نضال سيجري",
+      "تيم حسن"
+    ],
+    2,
+    60
+  ],
+  [
+    "Old Syrian TV – أيام الزمن الجميل",
+    "مين لعب جودة بضيعة ضايعة؟",
+    [
+      "سلوم حداد",
+      "دريد لحام",
+      "أيمن رضا",
+      "باسم ياخور"
+    ],
+    3,
+    60
+  ],
+  [
+    "Old Syrian TV – أيام الزمن الجميل",
+    "أي ممثلة ارتبط اسمها بعيلة خمس نجوم؟",
+    [
+      "سامية الجزائري",
+      "كاريس بشار",
+      "منى واصف",
+      "أمل عرفة"
+    ],
+    0,
+    60
+  ]
+]
