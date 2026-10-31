@@ -1,0 +1,16 @@
+const express=require('express'),http=require('http'),{Server}=require('socket.io'),QR=require('qrcode'),crypto=require('crypto');
+const questions=require('./questions.json'),app=express(),server=http.createServer(app),io=new Server(server),rooms=new Map();
+app.use(express.static('public'));app.get('/health',(_,r)=>r.json({ok:true}));
+function state(r){let q=questions[r.i];return {code:r.code,phase:r.phase,index:r.i,total:questions.length,category:q?.[0],question:q?.[1],options:q?.[2],correct:r.phase==='reveal'?q?.[3]:null,deadline:r.deadline,players:[...r.players.values()].map(p=>({name:p.name,score:p.score,id:p.id,answered:r.answers.has(p.id)})),answersCount:r.answers.size}}
+function emit(r){io.to(r.code).emit('state',state(r))}
+function reveal(r){if(r.phase!=='question')return;clearTimeout(r.timer);r.phase='reveal';for(let [id,a] of r.answers){let p=r.players.get(id);if(p&&a.choice===questions[r.i][3])p.score+=500+Math.max(0,Math.ceil(a.remaining/1000))*10}emit(r)}
+function next(r){clearTimeout(r.timer);r.i++;r.answers.clear();if(r.i>=questions.length){r.phase='finished';r.deadline=0;emit(r);return}r.phase='question';r.deadline=Date.now()+60000;emit(r);r.timer=setTimeout(()=>reveal(r),60000)}
+io.on('connection',s=>{
+s.on('create',(_,ack)=>{let code;do{code=crypto.randomBytes(4).toString('hex').slice(0,6).toUpperCase()}while(rooms.has(code));let r={code,host:s.id,players:new Map(),answers:new Map(),i:-1,phase:'lobby',deadline:0};rooms.set(code,r);s.join(code);s.data={code,host:true};ack?.({ok:true,code});emit(r)});
+s.on('join',({code,name,playerId},ack)=>{let r=rooms.get(String(code||'').toUpperCase());name=String(name||'').trim().slice(0,24);if(!r||!name)return ack?.({ok:false,error:'Invalid room or nickname'});let p=playerId&&r.players.get(playerId);if(!p){if(r.phase!=='lobby')return ack?.({ok:false,error:'Game already started'});if([...r.players.values()].some(p=>p.name.toLowerCase()===name.toLowerCase()))return ack?.({ok:false,error:'Nickname taken'});playerId=crypto.randomUUID();p={id:playerId,name,score:0};r.players.set(playerId,p)}s.join(r.code);s.data={code:r.code,playerId};ack?.({ok:true,playerId,code:r.code});emit(r)});
+s.on('start',(_,ack)=>{let r=rooms.get(s.data?.code);if(!r||r.host!==s.id||r.phase!=='lobby')return ack?.({ok:false});next(r);ack?.({ok:true})});
+s.on('answer',({choice},ack)=>{let r=rooms.get(s.data?.code),id=s.data?.playerId;if(!r||!id||r.phase!=='question'||Date.now()>=r.deadline||r.answers.has(id)||!Number.isInteger(choice)||choice<0||choice>3)return ack?.({ok:false});r.answers.set(id,{choice,remaining:r.deadline-Date.now()});ack?.({ok:true});emit(r)});
+s.on('next',(_,ack)=>{let r=rooms.get(s.data?.code);if(!r||r.host!==s.id||r.phase!=='reveal')return ack?.({ok:false});next(r);ack?.({ok:true})});
+s.on('qr',async({url},ack)=>{try{ack?.({data:await QR.toDataURL(String(url).slice(0,1000),{width:350})})}catch{ack?.({error:true})}});
+});
+server.listen(process.env.PORT||3000,'0.0.0.0');
